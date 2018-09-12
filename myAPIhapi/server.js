@@ -1,6 +1,8 @@
 "use strict";
 
 const Hapi = require("hapi");
+var mongoose = require("mongoose");
+mongoose.connect("mongodb://localhost/test");
 
 const server = Hapi.server({
   host: "localhost",
