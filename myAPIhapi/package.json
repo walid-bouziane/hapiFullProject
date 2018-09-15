@@ -10,7 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "config": "^2.0.1",
+    "good-console": "^7.1.0",
     "hapi": "^17.5.4",
+    "hapi-mongoose": "^2.0.0",
     "mongoose": "^5.2.14"
   }
 }
