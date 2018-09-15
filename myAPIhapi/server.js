@@ -63,7 +63,7 @@ var MyModel = mongoose.model(
 server.route({
   method: "GET",
   path: "/hello",
-  handler: function(request, h) {
+  handler: async function(request, h) {
     var nameApp = "baka hapi js";
 
     console.log("we are not connected");
@@ -78,10 +78,12 @@ server.route({
     var questions = mongoose.model("question");
     questions.find({}, function(err, data) {
       console.log(err, data, data.length);
-      // return { Crime: data };
+      return h.response({ Crime: data });
     });
 
-    return nameApp;
+    var mycrime = await questions.find({});
+    console.log(mycrime, mycrime.length);
+    return mycrime;
   }
 });
 
