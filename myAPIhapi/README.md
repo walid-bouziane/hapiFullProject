@@ -32,7 +32,7 @@ show databases
 ```
 
 https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
-
+https://stackoverflow.com/questions/5794834/how-to-access-a-preexisting-collection-with-mongoose
 https://mongoosejs.com/docs/guide.html
 https://docs.mongodb.com/manual/reference/method/db.collection.find/
 

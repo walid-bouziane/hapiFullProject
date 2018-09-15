@@ -76,14 +76,16 @@ server.route({
       )
     );
     var questions = mongoose.model("question");
-    questions.find({}, function(err, data) {
-      console.log(err, data, data.length);
-      return h.response({ Crime: data });
-    });
+    // questions.find({}, function(err, data) {
+    //   console.log(err, data, data.length);
+    //   return h.response({ Crime: data });
+    // });
 
     var mycrime = await questions.find({});
+    console.log("bug1");
     console.log(mycrime, mycrime.length);
-    return mycrime;
+    console.log("end before return");
+    return h.response(mycrime);
   }
 });
 
