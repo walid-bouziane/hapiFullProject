@@ -78,10 +78,10 @@ server.route({
     var questions = mongoose.model("question");
     questions.find({}, function(err, data) {
       console.log(err, data, data.length);
-      return data;
+      // return { Crime: data };
     });
 
-    // return nameApp;
+    return nameApp;
   }
 });
 
