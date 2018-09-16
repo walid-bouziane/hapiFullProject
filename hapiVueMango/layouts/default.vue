@@ -9,7 +9,7 @@ html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
-  background-image: url("~/assets/image/connexionBackground.png");
+  /* background-image: url("~/assets/image/connexionBackground.png"); */
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -39,6 +39,9 @@ html {
   background-color: #3b8070;
 }
 
+body {
+  background-color: white;
+}
 .button--grey {
   display: inline-block;
   border-radius: 4px;
