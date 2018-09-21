@@ -51,23 +51,16 @@ var MyModel = mongoose.model(
     location: String
   })
 );
-// var MyModel2 = mongoose.model(
-//   "crimes",
-//   new Schema({
-//     compnos: 152038722
-//   })
-// );
 
-// MyModel2.find();
-
+// get crimes
 server.route({
   method: "GET",
-  path: "/hello",
-  handler: async function(request, h) {
-    var nameApp = "baka hapi js";
+  path: "/api/crimes/{nb}",
+  handler: async function(request, reply) {
+    var nb = 10 * parseInt(request.params.nb);
+    if (nb < 0) nb = -nb;
 
-    console.log("we are not connected");
-
+    // console.log(connexionInstance);
     mongoose.model(
       "question",
       new Schema(
@@ -76,16 +69,9 @@ server.route({
       )
     );
     var questions = mongoose.model("question");
-    // questions.find({}, function(err, data) {
-    //   console.log(err, data, data.length);
-    //   return h.response({ Crime: data });
-    // });
 
-    var mycrime = await questions.find({});
-    console.log("bug1");
-    console.log(mycrime, mycrime.length);
-    console.log("end before return");
-    return h.response(mycrime);
+    var mycrime = await questions.find({}).limit(10);
+    return mycrime;
   }
 });
 

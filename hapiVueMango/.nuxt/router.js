@@ -3,12 +3,11 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-const _c3a0451a = () => import('../pages/connexion/index.vue' /* webpackChunkName: "pages/connexion/index" */).then(m => m.default || m)
-const _63c8b7b7 = () => import('../pages/bakaPolizei/index.vue' /* webpackChunkName: "pages/bakaPolizei/index" */).then(m => m.default || m)
-const _624a4c0e = () => import('../pages/admin/index.vue' /* webpackChunkName: "pages/admin/index" */).then(m => m.default || m)
 const _661d4a8a = () => import('../pages/createAccount/index.vue' /* webpackChunkName: "pages/createAccount/index" */).then(m => m.default || m)
+const _624a4c0e = () => import('../pages/admin/index.vue' /* webpackChunkName: "pages/admin/index" */).then(m => m.default || m)
+const _63c8b7b7 = () => import('../pages/bakaPolizei/index.vue' /* webpackChunkName: "pages/bakaPolizei/index" */).then(m => m.default || m)
+const _c3a0451a = () => import('../pages/connexion/index.vue' /* webpackChunkName: "pages/connexion/index" */).then(m => m.default || m)
 const _125b1742 = () => import('../pages/bakaPolizei/saisie/index.vue' /* webpackChunkName: "pages/bakaPolizei/saisie/index" */).then(m => m.default || m)
-const _39e84ff9 = () => import('../pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
 
 
 
@@ -69,14 +68,9 @@ export function createRouter () {
     scrollBehavior,
     routes: [
 		{
-			path: "/connexion",
-			component: _c3a0451a,
-			name: "connexion"
-		},
-		{
-			path: "/bakaPolizei",
-			component: _63c8b7b7,
-			name: "bakaPolizei"
+			path: "/createAccount",
+			component: _661d4a8a,
+			name: "createAccount"
 		},
 		{
 			path: "/admin",
@@ -84,19 +78,19 @@ export function createRouter () {
 			name: "admin"
 		},
 		{
-			path: "/createAccount",
-			component: _661d4a8a,
-			name: "createAccount"
+			path: "/bakaPolizei",
+			component: _63c8b7b7,
+			name: "bakaPolizei"
+		},
+		{
+			path: "/connexion",
+			component: _c3a0451a,
+			name: "connexion"
 		},
 		{
 			path: "/bakaPolizei/saisie",
 			component: _125b1742,
 			name: "bakaPolizei-saisie"
-		},
-		{
-			path: "/",
-			component: _39e84ff9,
-			name: "index"
 		}
     ],
     

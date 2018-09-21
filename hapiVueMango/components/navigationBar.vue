@@ -7,10 +7,6 @@
                  class="md-primary">New Crime</md-button>
       <md-button href="/admin"
                  class="md-primary">Your account</md-button>
-      <md-button href="/admin"
-                 class="md-primary">Primary</md-button>
-      <md-button href="/admin"
-                 class="md-primary">Primary</md-button>
     </div>
   </div>
 </template>

@@ -1,5 +1,9 @@
 <template>
   <div class="searchBar">
+    <md-radio v-model="shooting"
+              :value="false">shooting</md-radio>
+    <md-radio v-model="domestic"
+              :value="false">domestic</md-radio>
     <md-field v-for="(crime, index) in tabSearch"
               :key="index">
       <label>{{crime.data}}</label>
@@ -20,6 +24,8 @@ export default {
   name: "saisie",
   data() {
     return {
+      shooting: true,
+      domestic: true,
       tabSearch: [
         { data: "_id", value: "" },
         { data: "compnos", value: "" },
@@ -30,8 +36,6 @@ export default {
         { data: "reportingarea", value: "" },
         { data: "fromdate", value: "" },
         { data: "weapontype", value: "" },
-        { data: "shooting", value: "" },
-        { data: "domestic", value: "" },
         { data: "year", value: "" },
         { data: "month", value: "" },
         { data: "day_week", value: "" },
