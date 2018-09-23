@@ -1,0 +1,25 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "plugin:vue/essential",
+    "plugin:prettier/recommended",
+    "eslint:recommended"
+  ],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  {
+  "plugins": [
+    "prettier"
+  ],
+  "rules": {
+    "linebreak-style": ["error", "unix"],
+    "prettier/prettier": "error",
+    "no-console": 0
+  }
+}
