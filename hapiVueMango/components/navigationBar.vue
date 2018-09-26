@@ -1,11 +1,13 @@
 <template>
   <div class="navbarBackGround">
     <div class="navbar">
+      <md-button href="/bakaPolizei"
+                 class="md-primary">Home</md-button>
       <md-button href="/admin"
                  class="md-primary">Admin</md-button>
       <md-button href="/bakaPolizei/saisie"
                  class="md-primary">New Crime</md-button>
-      <md-button href="/admin"
+      <md-button href="/account"
                  class="md-primary">Your account</md-button>
     </div>
   </div>

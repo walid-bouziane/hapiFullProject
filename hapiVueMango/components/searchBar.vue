@@ -58,7 +58,7 @@ export default {
 
 <style>
 .searchBar {
-  width: 30%;
+  width: 20%;
   float: left;
   padding-right: 5%;
   padding-left: 5%;

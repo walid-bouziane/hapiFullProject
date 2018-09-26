@@ -4,10 +4,12 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 const _47a3058a = () => import('../pages/createAccount/index.vue' /* webpackChunkName: "pages/createAccount/index" */).then(m => m.default || m)
-const _9da07870 = () => import('../pages/admin/index.vue' /* webpackChunkName: "pages/admin/index" */).then(m => m.default || m)
 const _ed966b74 = () => import('../pages/bakaPolizei/index.vue' /* webpackChunkName: "pages/bakaPolizei/index" */).then(m => m.default || m)
+const _f4f584b4 = () => import('../pages/account/index.vue' /* webpackChunkName: "pages/account/index" */).then(m => m.default || m)
+const _9da07870 = () => import('../pages/admin/index.vue' /* webpackChunkName: "pages/admin/index" */).then(m => m.default || m)
 const _154d47c2 = () => import('../pages/connexion/index.vue' /* webpackChunkName: "pages/connexion/index" */).then(m => m.default || m)
 const _175ed5d3 = () => import('../pages/bakaPolizei/saisie/index.vue' /* webpackChunkName: "pages/bakaPolizei/saisie/index" */).then(m => m.default || m)
+const _2f3ef04a = () => import('../pages/bakaPolizei/infoCrime/index.vue' /* webpackChunkName: "pages/bakaPolizei/infoCrime/index" */).then(m => m.default || m)
 
 
 
@@ -73,14 +75,19 @@ export function createRouter () {
 			name: "createAccount"
 		},
 		{
-			path: "/admin",
-			component: _9da07870,
-			name: "admin"
-		},
-		{
 			path: "/bakaPolizei",
 			component: _ed966b74,
 			name: "bakaPolizei"
+		},
+		{
+			path: "/account",
+			component: _f4f584b4,
+			name: "account"
+		},
+		{
+			path: "/admin",
+			component: _9da07870,
+			name: "admin"
 		},
 		{
 			path: "/connexion",
@@ -91,6 +98,11 @@ export function createRouter () {
 			path: "/bakaPolizei/saisie",
 			component: _175ed5d3,
 			name: "bakaPolizei-saisie"
+		},
+		{
+			path: "/bakaPolizei/infoCrime",
+			component: _2f3ef04a,
+			name: "bakaPolizei-infoCrime"
 		}
     ],
     
